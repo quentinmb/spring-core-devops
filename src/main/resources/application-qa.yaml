@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    username: springframework
+    url: jdbc:mysql://localhost:3306/springguru
+    password: guru
+  jpa:
+    hibernate:
+      ddl-auto: update
