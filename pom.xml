@@ -5,7 +5,7 @@
 
 	<groupId>guru.springframework</groupId>
 	<artifactId>spring-core-devops</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Spring Core DevOps</name>
@@ -116,6 +116,16 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+	<distributionManagement>
+		<repository>
+			<id>release-http-unblocker</id>
+			<name>d585edb874e3-releases</name>
+			<url>http://13.61.189.76:8081/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-http-unblocker</id>
+			<url>http://13.61.189.76:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
